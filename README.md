@@ -7,7 +7,7 @@ on a dual-SIM (DSDS) phone, by patching one instruction in a native library. It 
 the symptom, how the cause was measured, why it breaks a dual-SIM phone, the exact change,
 how to build and install it, how it was verified, and how to carry it to a newer release.
 
-It is a personal interoperability repair on my own device and my own paid copy of the app.
+It is a personal interoperability repair on my own device and on my own copy of the app.
 It distributes no eufy binaries. Not affiliated with Anker or eufy.
 
 ## Definitions
