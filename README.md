@@ -1,4 +1,4 @@
-# Eufy Security dual-SIM mobile-data fix (Galaxy Z Fold7)
+# Eufy Security dual-SIM mobile-data fix
 
 ## Purpose and Scope
 
