@@ -1,0 +1,95 @@
+            ;-- cs2p2p_BroadcastMessage(char const*, char*, int, int, unsigned short):
+┌ sym.cs2p2p_BroadcastMessage_char_const___char___int__int__unsigned_short(int64_t arg1, int64_t arg2, int64_t arg3, int64_t arg4, int64_t arg5);
+│           ; arg int64_t arg1 @ x0
+│           ; arg int64_t arg2 @ x1
+│           ; arg int64_t arg3 @ x2
+│           ; arg int64_t arg4 @ x3
+│           ; arg int64_t arg5 @ x4
+│           ; var int64_t var_d0h @ stack - 0xd0
+│           ; var int64_t var_c0h @ stack - 0xc0
+│           ; var int64_t var_b0h @ stack - 0xb0
+│           ; var int64_t var_a0h @ stack - 0xa0
+│           ; var int64_t var_90h @ stack - 0x90
+│           0x0034a0a0      stp   fp, lr, [sp, -0xe0]!                 ; RELOC TARGET 64 cs2p2p_BroadcastMessage(char const*, char*, int, int, unsigned short) @ 0x0034a0a0 ; cs2p2p_BroadcastMessage(char const*, char*, int, int, unsigned short)
+│           0x0034a0a4      mov   fp, sp
+│           0x0034a0a8      stp   x25, x26, [var_a0h]
+│           0x0034a0ac      adrp  x25, 0x3e2000
+│           0x0034a0b0      mov   w26, 0
+│           0x0034a0b4      str   x0, [fp, 0x78]                       ; arg1
+│           0x0034a0b8      stp   x19, x20, [var_d0h]
+│           0x0034a0bc      ldr   x0, [x25, 0xe68]                     ; [0xe68:4]=0x8999
+│           0x0034a0c0      add   x19, fp, 0x98
+│           0x0034a0c4      add   x20, fp, 0xb8
+│           0x0034a0c8      str   x1, [fp, 0x70]                       ; arg2
+│           0x0034a0cc      uxth  w1, w4                               ; arg5
+│           0x0034a0d0      str   w1, [fp, 0x6c]
+│           0x0034a0d4      ldr   x0, [x0]
+│           0x0034a0d8      stp   x27, x28, [var_90h]
+│           0x0034a0dc      stp   x21, x22, [var_c0h]
+│           0x0034a0e0      stp   x23, x24, [var_b0h]
+│           0x0034a0e4      mov   w27, w2                              ; arg3
+│           0x0034a0e8      mov   w28, w3                              ; arg4
+│           0x0034a0ec      str   x0, [fp, 0xd8]
+│           0x0034a0f0      bl    0x3d46a0
+│           0x0034a0f4      stp   xzr, xzr, [x19]
+│           0x0034a0f8      stp   xzr, xzr, [x19, 0x10]
+│           0x0034a0fc      stp   xzr, xzr, [x20]
+│           0x0034a100      stp   xzr, xzr, [x20, 0x10]
+│           0x0034a104      cmp   w0, wzr
+│           0x0034a108      mov   w22, w0
+│       ┌─< 0x0034a10c      b.le  0x34a1b4
+│       │   0x0034a110      add   x24, fp, 0x88
+│       │   0x0034a114      adrp  x21, 0x131000
+│       │   0x0034a118      adrp  x23, 0x131000
+│       │   0x0034a11c      add   x0, x24, 4
+│       │   0x0034a120      add   x21, x21, 0x290
+│       │   0x0034a124      add   x23, x23, 0x488
+│       │   0x0034a128      str   x0, [fp, 0x60]
+│      ┌──< 0x0034a12c      b     0x34a13c
+│    ┌┌───> 0x0034a130      add   w26, w26, 1
+│    ╎╎││   0x0034a134      cmp   w26, w22
+│   ┌─────< 0x0034a138      b.eq  0x34a1b4
+│   │╎╎││   ; CODE XREF from sym.cs2p2p_BroadcastMessage_char_const___char___int__int__unsigned_short @ 0x34a12c
+│  ┌───└──> 0x0034a13c      mov   x1, x19
+│  ╎│╎╎ │   0x0034a140      mov   w0, w26
+│  ╎│╎╎ │   0x0034a144      mov   x2, x20
+│  ╎│╎╎ │   0x0034a148      bl    0x3d46b0
+│  ╎│╎╎ │   0x0034a14c      mov   x0, x21
+│  ╎│╎╎ │   0x0034a150      mov   x1, x19
+│  ╎│╎╎ │   0x0034a154      bl    sym.imp.strcmp
+│  ╎│└────< 0x0034a158      cbz   w0, 0x34a130
+│  ╎│ ╎ │   0x0034a15c      mov   x0, x23
+│  ╎│ ╎ │   0x0034a160      mov   x1, x19
+│  ╎│ ╎ │   0x0034a164      mov   x2, 7
+│  ╎│ ╎ │   0x0034a168      bl    sym.imp.strncmp
+│  ╎│ └───< 0x0034a16c      cbz   w0, 0x34a130
+│  ╎│   │   0x0034a170      ldrh  w2, [fp, 0x6c]                       ; [0x6c:4]=0
+│  ╎│   │   0x0034a174      mov   w3, 2
+│  ╎│   │   0x0034a178      ldr   x1, [fp, 0x60]                       ; [0x60:4]=504
+│  ╎│   │   0x0034a17c      mov   x0, x20
+│  ╎│   │   0x0034a180      rev16 w2, w2
+│  ╎│   │   0x0034a184      strh  w3, [x24]
+│  ╎│   │   0x0034a188      strh  w2, [x24, 2]
+│  ╎│   │   0x0034a18c      add   w26, w26, 1
+│  ╎│   │   0x0034a190      bl    sym.imp.inet_aton
+│  ╎│   │   0x0034a194      ldr   x0, [fp, 0x78]                       ; [0x78:4]=1
+│  ╎│   │   0x0034a198      mov   w2, w27
+│  ╎│   │   0x0034a19c      ldr   x1, [fp, 0x70]                       ; [0x70:4]=8
+│  ╎│   │   0x0034a1a0      mov   w3, w28
+│  ╎│   │   0x0034a1a4      mov   x4, x24
+│  ╎│   │   0x0034a1a8      bl    0x3d4680
+│  ╎│   │   0x0034a1ac      cmp   w26, w22
+│  └──────< 0x0034a1b0      b.ne  0x34a13c
+│   └───└─> 0x0034a1b4      ldr   x0, [x25, 0xe68]                     ; [0xe68:4]=0x8999
+│           0x0034a1b8      ldr   x1, [fp, 0xd8]                       ; [0xd8:4]=0xfdd0
+│           0x0034a1bc      ldr   x0, [x0]
+│           0x0034a1c0      cmp   x1, x0
+│       ┌─< 0x0034a1c4      b.ne  0x34a1e4
+│       │   0x0034a1c8      ldp   x19, x20, [var_d0h]
+│       │   0x0034a1cc      ldp   x21, x22, [var_c0h]
+│       │   0x0034a1d0      ldp   x23, x24, [var_b0h]
+│       │   0x0034a1d4      ldp   x25, x26, [var_a0h]
+│       │   0x0034a1d8      ldp   x27, x28, [var_90h]
+│       │   0x0034a1dc      ldp   fp, lr, [sp], 0xe0
+│       │   0x0034a1e0      ret
+└       └─> 0x0034a1e4      bl    sym.imp.__stack_chk_fail

@@ -1,0 +1,78 @@
+=== iface -> subId map ===
+InterfaceName: rmnet_data8 LinkAddresses: [ 10.73.92.167/28 ]
+mSubId = 1
+mSubId = 1
+mSubId = 1
+InterfaceName: rmnet_data7 LinkAddresses: [ 100.127.150.94/30 ]
+mSubId = 1
+mSubId = 1
+mSubId = 1
+InterfaceName: rmnet_data1 LinkAddresses: [ 10.145.8.170/30 ]
+mSubId = 3
+mSubId = 3
+mSubId = 3
+mSubId = 1
+mSubId = 1
+mSubId = 1
+mSubId = 1
+mSubId = 1
+mSubId = 3
+mSubId = 3
+mSubId = 3
+mSubId = 3
+=== ip -o -4 addr ===
+49: rmnet_data1    inet 10.145.8.170/30 brd 10.145.8.171 scope global rmnet_data1\       valid_lft forever preferred_lft forever
+55: rmnet_data7    inet 100.127.150.94/30 brd 100.127.150.95 scope global rmnet_data7\       valid_lft forever preferred_lft forever
+56: rmnet_data8    inet 10.73.92.167/28 brd 10.73.92.175 scope global rmnet_data8\       valid_lft forever preferred_lft forever
+=== app pid 21551 thread names ===
+ing.battery.cam Signal Catcher perfetto_hprof_ Jit thread pool HeapTaskDaemon ReferenceQueueD FinalizerDaemon FinalizerWatchd binder:21551_1 binder:21551_2 binder:21551_3 Profile Saver ing.battery.cam Thread-2 SharedPreferenc Firebase Backgr Firebase Backgr Firebase Backgr Firebase-Messag Firebase-Messag Firebase Blocki Firebase Blocki Firebase Blocki Firebase Blocki FileObserver Firebase Blocki Firebase Blocki ScionFrontendAp MessengerIpcCli Firebase Backgr GmsDynamite pool-17-thread- pool-5-thread-1 queued-work-loo DefaultDispatch DefaultDispatch DefaultDispatch GoogleApiHandle Measurement Wor ProcessStablePh WM.task-1 SplitCompatBack pool-21-thread- pool-21-thread- pool-21-thread- pool-21-thread- pool-21-thread- pool-21-thread- pool-21-thread- WM.task-2 pool-21-thread- pool-21-thread- pool-21-thread- pool-21-thread- pool-21-thread- .1, thread No.1 DefaultExecutor pool-23-thread- pool-24-thread- pool-25-thread- pool-26-thread- pool-27-thread- pool-28-thread- pool-29-thread- pool-30-thread- pool-31-thread- pool-32-thread- pool-33-thread- pool-34-thread- pool-35-thread- DefaultDispatch pool-36-thread- DefaultDispatch DefaultDispatch TaskQueueThread skExecuteThread Messages.Worker SENSORS_DATA_TH ConnectivityThr DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch pool-37-thread- DefaultDispatch DefaultDispatch DefaultDispatch ConscryptStatsL KmmP2PClient-1 KmmP2PClient-2 Timer-0 pool-38-thread- pool-38-thread- arch_disk_io_0 P2P Dispatcher KmmP2PClient-3 RenderThread TracingMuxer _DCResponse arch_disk_io_1 pool-21-thread- pool-21-thread- FrameMetricsAgg pool-4-thread-1 pool-19-thread- OkHttp Dispatch JSContext-Threa ProtoLogBackgro hwuiTask0 hwuiTask1 pool-21-thread- pool-21-thread- pool-21-thread- Thread-28 Thread-29 pool-21-thread- pool-21-thread- RxSchedulerPurg RxCachedWorkerP RxComputationTh OkHttp Dispatch Thread-30 work_thread RxCachedThreadS GoogleApiHandle RxCachedThreadS RxCachedThreadS RxCachedThreadS RxCachedThreadS RxCachedThreadS RxCachedThreadS RxCachedThreadS RxCachedThreadS RxCachedThreadS RxCachedThreadS RxCachedThreadS RxCachedThreadS RxCachedThreadS RxCachedThreadS RxCachedThreadS RxCachedThreadS pool-44-thread- pool-43-thread- pool-45-thread- OkHttp Dispatch OkHttp Dispatch work_thread pool-49-thread- SurfaceSyncGrou ThingHandler binder:21551_4 OkHttp Dispatch OkHttp Dispatch OkHttp Dispatch OkHttp Dispatch arch_disk_io_2 OkHttp Dispatch OkHttp Dispatch OkHttp Dispatch OkHttp Dispatch OkHttp Dispatch RxComputationTh OkHttp Dispatch ing.battery.cam ing.battery.cam ing.battery.cam ing.battery.cam ing.battery.cam ing.battery.cam ing.battery.cam ing.battery.cam ing.battery.cam OkHttp Dispatch work_thread pool-55-thread- MegaSyncBridge OkHttp Dispatch OkHttp Dispatch OkHttp Dispatch DefaultDispatch DefaultDispatch WM.task-3 OkHttp Dispatch OkHttp Dispatch OkHttp Dispatch OkHttp Dispatch OkHttp Dispatch OkHttp Dispatch BluetoothClient WM.task-4 OkHttp Dispatch WM.task-4 OkHttp Dispatch OkHttp Dispatch work_thread PlayBillingLibr OkHttp Dispatch PlayBillingLibr arch_disk_io_3 lottie-1-thread OkHttp Dispatch OkHttp Dispatch pool-58-thread- OkHttp Dispatch OkHttp Dispatch pool-57-thread- OkHttp Dispatch binder:21551_5 binder:21551_4 OkHttp Dispatch OkHttp Dispatch online thing pr OkHttp Dispatch OkHttp Dispatch upgrade floodli DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch OkHttp Dispatch OkHttp Dispatch glide-active-re glide-disk-cach KmmP2PClient-4 glide-source-th pool-51-thread- pool-51-thread- RxComputationTh RxComputationTh RxComputationTh RxComputationTh RxComputationTh RxComputationTh OkHttp Dispatch androidx.work-1 OkHttp Dispatch pool-60-thread- pool-60-thread- HybridData Dest pool-61-thread- mqt_v_js mqt_v_native OkHttp Dispatch hades OkHttp Connecti pool-62-thread- ionCamera.video pool-66-thread- CameraX-schedul CameraX-core_ca CameraManagerGl CameraX-core_ca CameraX-core_ca CameraX-core_ca pool-66-thread- #1-SvcInit hades -us-pr.eufy.com OkHttp TaskRunn pp.eufylife.com -us-pr.eufy.com Okio Watchdog -us-pr.eufy.com pr.eufylife.com androidx.work-2 Okio Watchdog OkHttp TaskRunn OkHttp TaskRunn OkHttp TaskRunn -us-pr.eufy.com -us-pr.eufy.com OkHttp TaskRunn OkHttp TaskRunn OkHttp Dispatch pool-22-thread- OkHttp Dispatch pool-67-thread- AndroidH3DnsChe CronetInit ThreadPoolServi ThreadPoolForeg ThreadPoolPrese ThreadPoolAudio ThreadPoolForeg CronetNet ThreadPoolForeg ThreadPoolForeg CronetFile pool-67-thread- Timer-1 pool-67-thread- pool-67-thread- .1, thread No.2 ing.battery.cam androidx.work-3 ing.battery.cam ing.battery.cam ing.battery.cam ing.battery.cam ing.battery.cam Thread-53 Thread-202 Thread-183 Thread-1037 AudioTrack MediaRoutePollT PcmAudioThread AudioPortEventH _recv_DRW_02 _send_DRW_02 Thread-975 Thread-1040 Thread-57 P2P Dispatcher pool-51-thread- pool-51-thread- NDK MediaCodec_ CCodecWatchdog NDK MediaCodec_ NDK MediaCodec_ 
+=== samples: time | top-activity-tail | per-rmnet tx-pkt delta ===
+15:46:58 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:47:01 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +64 | rmnet_data8 +0
+15:47:03 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +53 | rmnet_data8 +0
+15:47:05 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +59 | rmnet_data8 +0
+15:47:07 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +69 | rmnet_data8 +0
+15:47:09 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +62 | rmnet_data8 +0
+15:47:11 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +91 | rmnet_data8 +0
+15:47:13 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +75 | rmnet_data8 +0
+15:47:15 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +72 | rmnet_data8 +0
+15:47:17 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +25 | rmnet_data8 +0
+15:47:20 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +21 | rmnet_data8 +0
+15:47:22 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +1 | rmnet_data8 +0
+15:47:24 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +3 | rmnet_data8 +0
+15:47:26 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +204 | rmnet_data8 +0
+15:47:28 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +45 | rmnet_data8 +0
+15:47:30 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +247 | rmnet_data8 +0
+15:47:32 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +1 | rmnet_data8 +0
+15:47:34 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +5 | rmnet_data8 +0
+15:47:37 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +42 | rmnet_data8 +0
+15:47:39 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +3 | rmnet_data8 +0
+15:47:41 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:47:43 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:47:45 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:47:47 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:47:49 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:47:51 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +5 | rmnet_data8 +0
+15:47:53 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +1 | rmnet_data8 +0
+15:47:56 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +1 | rmnet_data8 +0
+15:47:58 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +4 | rmnet_data8 +0
+15:48:00 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +1 | rmnet_data8 +0
+15:48:02 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:48:04 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:48:06 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:48:08 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +4 | rmnet_data8 +0
+15:48:10 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:48:12 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +1 | rmnet_data8 +0
+15:48:14 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:48:16 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +45 | rmnet_data8 +0
+15:48:19 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +60 | rmnet_data8 +0
+15:48:21 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:48:23 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +10 | rmnet_data8 +0
+15:48:25 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +6 | rmnet_data8 +0
+15:48:27 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +3 | rmnet_data8 +0
+15:48:29 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:48:31 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +40 | rmnet_data8 +0
+15:48:33 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:48:35 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:48:37 <other> | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+=== done ===

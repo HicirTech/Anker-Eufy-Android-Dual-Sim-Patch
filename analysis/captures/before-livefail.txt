@@ -1,0 +1,81 @@
+=== iface -> subId map ===
+InterfaceName: rmnet_data8 LinkAddresses: [ 10.73.92.167/28 ]
+mSubId = 1
+mSubId = 1
+mSubId = 1
+InterfaceName: rmnet_data7 LinkAddresses: [ 100.127.150.94/30 ]
+mSubId = 1
+mSubId = 1
+mSubId = 1
+InterfaceName: rmnet_data2 LinkAddresses: [ 10.153.163.32/26 ]
+mSubId = 3
+mSubId = 3
+mSubId = 3
+mSubId = 1
+mSubId = 1
+mSubId = 1
+mSubId = 1
+mSubId = 1
+mSubId = 3
+mSubId = 3
+mSubId = 3
+mSubId = 3
+mSubId = 3
+mSubId = 3
+mSubId = 3
+=== ip -o -4 addr ===
+50: rmnet_data2    inet 10.153.163.32/26 brd 10.153.163.63 scope global rmnet_data2\       valid_lft forever preferred_lft forever
+55: rmnet_data7    inet 100.127.150.94/30 brd 100.127.150.95 scope global rmnet_data7\       valid_lft forever preferred_lft forever
+56: rmnet_data8    inet 10.73.92.167/28 brd 10.73.92.175 scope global rmnet_data8\       valid_lft forever preferred_lft forever
+=== app pid 12735 thread names ===
+ing.battery.cam Signal Catcher perfetto_hprof_ Jit thread pool HeapTaskDaemon ReferenceQueueD FinalizerDaemon FinalizerWatchd binder:12735_1 binder:12735_2 binder:12735_3 Profile Saver ing.battery.cam Thread-2 Firebase-Messag Firebase-Messag pool-5-thread-1 Firebase Backgr GmsDynamite MessengerIpcCli Firebase Backgr Firebase Backgr Firebase Backgr DefaultDispatch FileObserver pool-18-thread- queued-work-loo WM.task-1 GoogleApiHandle WM.task-2 ProcessStablePh .1, thread No.1 DefaultExecutor pool-23-thread- pool-24-thread- pool-25-thread- pool-26-thread- pool-27-thread- pool-28-thread- pool-29-thread- pool-30-thread- pool-31-thread- pool-32-thread- pool-33-thread- pool-34-thread- pool-35-thread- DefaultDispatch DefaultDispatch pool-36-thread- TaskQueueThread skExecuteThread Messages.Worker SENSORS_DATA_TH ConnectivityThr DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch pool-37-thread- ConscryptStatsL KmmP2PClient-1 KmmP2PClient-2 Timer-0 pool-38-thread- RenderThread TracingMuxer arch_disk_io_0 arch_disk_io_1 FrameMetricsAgg P2P Dispatcher pool-15-thread- _DCResponse RxSchedulerPurg RxCachedWorkerP ProtoLogBackgro hwuiTask0 hwuiTask1 RxComputationTh JSContext-Threa Thread-26 work_thread GoogleApiHandle SurfaceSyncGrou KmmP2PClient-3 pool-21-thread- pool-21-thread- pool-21-thread- Thread-94 Thread-28 pool-21-thread- pool-21-thread- pool-43-thread- work_thread pool-47-thread- binder:12735_4 arch_disk_io_2 RxComputationTh ThingHandler ing.battery.cam ing.battery.cam ing.battery.cam ing.battery.cam ing.battery.cam ing.battery.cam ing.battery.cam ing.battery.cam ing.battery.cam work_thread pool-53-thread- MegaSyncBridge DefaultDispatch DefaultDispatch WM.task-3 BluetoothClient WM.task-4 work_thread DefaultDispatch DefaultDispatch arch_disk_io_3 PlayBillingLibr pool-56-thread- pool-54-thread- binder:12735_2 online thing pr upgrade floodli PlayBillingLibr DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch DefaultDispatch glide-active-re RxComputationTh RxComputationTh RxComputationTh RxComputationTh RxComputationTh RxComputationTh androidx.work-1 KmmP2PClient-4 HybridData Dest pool-59-thread- mqt_v_js mqt_v_native hades pool-60-thread- ionCamera.video binder:12735_5 OkHttp Connecti CameraX-schedul CameraX-core_ca CameraManagerGl CameraX-core_ca CameraX-core_ca CameraX-core_ca #1-SvcInit hades androidx.work-2 Okio Watchdog pool-65-thread- AndroidH3DnsChe CronetInit ThreadPoolServi ThreadPoolForeg ThreadPoolPrese ThreadPoolAudio ThreadPoolForeg CronetNet ThreadPoolForeg ThreadPoolForeg ThreadPoolForeg CronetFile pool-65-thread- Timer-1 pool-65-thread- pool-65-thread- .1, thread No.2 ing.battery.cam androidx.work-3 AudioPortEventH binder:12735_6 CCodecWatchdog NDK MediaCodec_ NDK MediaCodec_ CodecLooper onPool-worker-2 binder:12735_7 binder:12735_8 pool-69-thread- pp.eufylife.com glide-disk-cach glide-source-th glide-source-th glide-source-th glide-source-th -us-pr.eufy.com DefaultDispatch ScionFrontendAp Firebase Blocki Measurement Wor Firebase Blocki Thread-21284  androidx.work-4 OkHttp Dispatch OkHttp TaskRunn OkHttp TaskRunn Okio Watchdog onPool-worker-9 onPool-worker-8 nPool-worker-10 nPool-worker-11 nPool-worker-13 nPool-worker-12 OkHttp Dispatch OkHttp Dispatch OkHttp Dispatch OkHttp TaskRunn P2P Dispatcher  
+=== samples: time | top-activity-tail | per-rmnet tx-pkt delta ===
+15:18:03 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +0 | rmnet_data7 +0 | rmnet_data8 +0
+15:18:05 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +395 | rmnet_data8 +21
+15:18:07 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +61 | rmnet_data8 +20
+15:18:09 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +57 | rmnet_data8 +21
+15:18:11 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +55 | rmnet_data8 +20
+15:18:13 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +22 | rmnet_data7 +62 | rmnet_data8 +22
+15:18:16 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +76 | rmnet_data8 +20
+15:18:18 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +52 | rmnet_data8 +21
+15:18:20 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +210 | rmnet_data8 +20
+15:18:22 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +54 | rmnet_data8 +21
+15:18:24 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +26 | rmnet_data8 +10
+15:18:26 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +168 | rmnet_data8 +32
+15:18:28 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +56 | rmnet_data8 +21
+15:18:30 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +423 | rmnet_data8 +20
+15:18:32 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +53 | rmnet_data8 +21
+15:18:34 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +62 | rmnet_data8 +13
+15:18:37 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +512 | rmnet_data8 +28
+15:18:39 CamMainActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +66 | rmnet_data8 +21
+15:18:41 CamMainActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +61 | rmnet_data8 +20
+15:18:43 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +23 | rmnet_data8 +9
+15:18:45 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +530 | rmnet_data8 +33
+15:18:47 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +53 | rmnet_data8 +20
+15:18:49 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +61 | rmnet_data8 +21
+15:18:51 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +15 | rmnet_data8 +3
+15:18:53 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +441 | rmnet_data8 +38
+15:18:55 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +58 | rmnet_data8 +20
+15:18:57 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +56 | rmnet_data8 +19
+15:19:00 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +58 | rmnet_data8 +22
+15:19:02 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +254 | rmnet_data8 +21
+15:19:04 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +47 | rmnet_data8 +20
+15:19:06 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +31 | rmnet_data8 +13
+15:19:08 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +508 | rmnet_data8 +29
+15:19:10 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +58 | rmnet_data8 +20
+15:19:12 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +70 | rmnet_data8 +21
+15:19:14 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +58 | rmnet_data8 +21
+15:19:16 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +53 | rmnet_data8 +20
+15:19:18 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +55 | rmnet_data8 +21
+15:19:21 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +50 | rmnet_data8 +20
+15:19:23 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +48 | rmnet_data8 +20
+15:19:25 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +339 | rmnet_data8 +21
+15:19:27 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +71 | rmnet_data8 +21
+15:19:29 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +49 | rmnet_data8 +20
+15:19:31 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +49 | rmnet_data8 +21
+15:19:33 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +47 | rmnet_data8 +20
+15:19:35 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +56 | rmnet_data8 +21
+15:19:37 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +52 | rmnet_data8 +20
+15:19:39 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +21 | rmnet_data7 +16 | rmnet_data8 +6
+15:19:42 MediaLiveActivity | rmnet_data0 +0 | rmnet_data1 +0 | rmnet_data2 +20 | rmnet_data7 +580 | rmnet_data8 +35
+=== done ===

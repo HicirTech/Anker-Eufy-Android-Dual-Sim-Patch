@@ -1,0 +1,24 @@
+     ┌┌───> 0x000e3930      ldr   x27, [x27]
+    ┌─────< 0x000e3934      cbz   x27, 0xe3de8
+    │╎╎╎╎   0x000e3938      ldr   x20, [x27, 0x18]                     ; [0x18:4]=0
+    │└────< 0x000e393c      cbz   x20, 0xe3930
+    │ ╎╎╎   0x000e3940      ldrh  w8, [x20]
+    │ ╎╎╎   0x000e3944      cmp   w8, 2
+    │ └───< 0x000e3948      b.ne  0xe3930
+    │  ╎╎   0x000e394c      ldr   x24, [x27, 8]                        ; [0x8:4]=0
+    │  ╎╎   0x000e3950      mov   x1, x19
+    │  ╎╎   0x000e3954      mov   x0, x24
+    │  ╎╎   0x000e3958      bl    sym.imp.strstr
+    │  └──< 0x000e395c      cbnz  x0, 0xe3894
+    │   ╎   0x000e3960      mov   x0, x24
+    │   ╎   0x000e3964      adrp  x1, 0x79000
+    │   ╎   0x000e3968      add   x1, x1, 0x6fa
+    │   ╎   0x000e396c      bl    sym.imp.strstr
+    │   └─< 0x000e3970      cbnz  x0, 0xe3894
+    │       0x000e3974      ldr   w0, [x20, 4]                         ; [0x4:4]=0x10102
+    │       0x000e3978      ldr   x24, [x27, 0x20]                     ; [0x20:4]=64 ; "@"
+    │       0x000e397c      bl    sym.imp.inet_ntoa
+    │       0x000e3980      adrp  x19, 0x1fb000
+    │       0x000e3984      add   x19, x19, 0x6d0
+    │       0x000e3988      mov   x1, x0
+    │       0x000e398c      mov   x0, x19

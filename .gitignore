@@ -1,0 +1,13 @@
+# Proprietary Eufy binaries — kept locally for rebuilds, never published (copyright + >100MB)
+binaries/
+*.apk
+*.so
+
+# Signing key — local only, never commit a signing key
+keystore/
+*.keystore
+*.jks
+
+# OS / editor
+Thumbs.db
+.DS_Store
